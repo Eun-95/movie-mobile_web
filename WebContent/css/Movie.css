@@ -183,13 +183,13 @@
 		width: 100%;
 	}
 	.movie__Trailer>iframe {
-		width: 400px;
-		height: 300px;
+		width: 100%;
+		height: 250px;
 		border: none;
 		display: block;
 		position: relative;
-		left: 41%;
-		transform: translate(-100px);
+		left: 50%;
+		transform: translate(-50%);
 	}
 }
 
