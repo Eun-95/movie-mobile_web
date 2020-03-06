@@ -37,5 +37,5 @@ $.ajax({
  }
 })
 </script>
-
+<h1 id="movie_title">가장 인기 있는 영화</h1>
 <div id="Home"></div> 
