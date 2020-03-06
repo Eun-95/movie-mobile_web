@@ -417,7 +417,6 @@ input, button {
 		position: relative;
 		overflow: hidden;
 		height: 95%;
-		top: 10%;
 		z-index: 1;
 	}
 }
