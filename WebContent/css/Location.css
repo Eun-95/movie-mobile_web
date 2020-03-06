@@ -416,7 +416,7 @@ input, button {
 	.Site-content {
 		position: relative;
 		overflow: hidden;
-		height: 95%;
+		height: 100%;
 		z-index: 1;
 	}
 }
