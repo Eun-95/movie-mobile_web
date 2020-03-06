@@ -191,6 +191,23 @@
 		left: 50%;
 		transform: translate(-50%);
 	}
+	.movie__vote {
+    align-items: center;
+    color: aliceblue;
+    background-color: #f68d01;
+    border-radius: 50%;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+    display: flex;
+    height: 2.25em;
+    justify-content: center;
+    padding: 0.5em;
+    position: absolute;
+    right: 25px;
+    text-align: center;
+    top: 45%;
+    transform: translateX(50%);
+    width: 2.25em;
+	}
 }
 
 @media screen and (min-width:668px) {
@@ -208,21 +225,21 @@
 	
 	.movie__vote {
     	align-items: center;
-    	color: aliceblue;
-    	background-color: #f68d01;
-    	border-radius: 50%;
-    	box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
-    	display: flex;
-    	height: 2.25em;
-    	justify-content: center;
-    	padding: 0.5em;
-    	position: absolute;
-    	right: 10%;
-    	text-align: center;
-    	top: 42%;
-    	transform: translateX(50%);
-    	width: 2.25em;
-  }
+		color: aliceblue;
+		background-color: #f68d01;
+		border-radius: 50%;
+		box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+		display: flex;
+		height: 2.25em;
+		justify-content: center;
+		padding: 0.5em;
+		position: absolute;
+		right: 20%;
+		text-align: center;
+		top: 50%;
+		transform: translate(50%);
+		width: 2.25em;
+		}
 }
 
 @media screen and (min-width: 1024px) {
@@ -232,6 +249,14 @@
 	   	text-overflow: ellipsis;
 	}
 	#movie .movie__Poster {
+		max-width: 100%;
+		height: 300px;
+		position: relative;
+		top: -20px;
+		box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px
+			rgba(80, 80, 80, 0.22);
+	}
+	#movie1 .movie__Poster {
 		max-width: 100%;
 		height: 300px;
 		position: relative;
@@ -256,12 +281,12 @@
 		justify-content: center;
 		padding: 0.5em;
 		position: absolute;
-		left: 28%;
+		left: 30%;
 		text-align: center;
-		top: 50%;
-		transform: translateX(50%);
+		top: 42%;
+		transform: translate(50%);
 		width: 2.25em;
-	}
+		}
 }
 
 @media screen and (min-width: 320px) and (max-width: 667px) and
@@ -286,10 +311,10 @@
 }
 .search-container {
 	width: 210px;
-	height: 50px;
+    height: 50px;
     position: absolute;
-    left: 35%;
-    transform: translateX(-35%);
+    left: 50%;
+    transform: translateX(-50%);
     top: 10%;
 }
 

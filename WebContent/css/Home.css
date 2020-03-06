@@ -22,12 +22,15 @@ html, #root {
  height: 100%;
 }
 
-#movie_title{
+#movie_title {
 	color: #fff;
-	text-shadow: 6px 2px 2px gray;
-	position: absolute;
-	left: 15%;
-	top: 5%;
+    text-shadow: 6px 2px 2px grey;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    top: 5%;
+    text-align: center;
 }
 
 #Home {
@@ -37,8 +40,14 @@ html, #root {
 
 #Home span {
  display: block;
- font-size: .4em;
  opacity: .8;
+}
+
+#Home span>img {
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 #Home div {
