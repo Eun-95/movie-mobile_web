@@ -8,7 +8,7 @@
 	var arr = new Array();
 	var day1=new Date();
 
-	var day2=day1.getFullYear()+"0"+(day1.getMonth()+1)+"0"+(day1.getDate()-1);
+	var day2=day1.getFullYear()+"0"+(day1.getMonth()+1)+(day1.getDate()-1);
 		
 	$.ajax({
 		type:"get",
