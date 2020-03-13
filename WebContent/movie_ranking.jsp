@@ -7,8 +7,10 @@
 	var i=0;
 	var arr = new Array();
 	var day1=new Date();
-
-	var day2=day1.getFullYear()+"0"+(day1.getMonth()+1)+(day1.getDate()-1);
+	var real1="";
+	var realArray=new Array(); 
+	
+	var day2=day1.getFullYear()+"0"+(day1.getMonth()+1)+""+(day1.getDate()-1);
 		
 	$.ajax({
 		type:"get",
@@ -38,6 +40,32 @@
 					success:function(result){
 						
 						$(result).each(function () {
+							$(this.results).each(function () {
+								var datePath1 = (JSON.stringify(this.release_date).replace(/"/g, ""));
+								var realYear1="";
+								for(var i=0; i<datePath1.length; i++){
+									if(datePath1[i]=="-"){
+										
+									}
+									else{
+									realYear1=realYear1+datePath1[i] 
+									}
+								}
+								realArray.push(Number(realYear1));
+								
+								
+								
+							})
+							
+						})
+						realArray.sort();
+						
+						
+						
+						
+						
+						
+						$(result).each(function () {
 						
 						
 						$(this.results).each(function () {
@@ -46,11 +74,16 @@
 							var realYear="";
 							var datePath = (JSON.stringify(this.release_date).replace(/"/g, ""));
 							
-							for(var i=0; i<4; i++){
+							for(var i=0; i<datePath.length; i++){
+								if(datePath[i]=="-"){
+									
+								}
+								else{
 								realYear=realYear+datePath[i] 
+								}
 							}
-							if(Number(realYear)>=(Number(date1.getFullYear())-1)){	
-							
+							if(Number(realArray[(realArray.length-1)])==Number(realYear)){	
+							realArray=new Array(); 
 							var img = (JSON.stringify(this.poster_path)).replace(/"/g, "");
 							var title = JSON.stringify(this.title).replace(/"/g, "");
 							var original_title = JSON.stringify(this.original_title).replace(/"/g, "");
