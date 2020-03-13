@@ -26,6 +26,7 @@ body {
        color: #fff;
        text-shadow: 6px 2px 2px grey;
        position: absolute;
+       text-align: center;
        width: 100%;
        left: 50%;
        transform: translate(-50%);
@@ -169,12 +170,28 @@ body {
    }
 
    @media screen and (min-width:668px) {
+    #Home .movie__Poster {
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    top: -20px;
+    box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px
+     rgba(80, 80, 80, 0.22);
+   }
     #Home span>img {
         width: 50%;
     }
 }
 @media screen and (min-width: 1024px) {
+    #Home .movie__Poster {
+    max-width: 100%;
+    height: 600px;
+    position: relative;
+    top: -20px;
+    box-shadow: -10px 19px 38px rgba(83, 83, 83, 0.3), 10px 15px 12px
+     rgba(80, 80, 80, 0.22);
+   }
     #Home span>img {
-        width: 30%;
+        width: 40%;
     }
 }
